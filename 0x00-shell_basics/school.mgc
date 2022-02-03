@@ -1,1 +1,3 @@
-0 string list School !:mime School
+for file in *"$SCHOOL"*.out; do
+    printf '%s\n' "$file"
+done
