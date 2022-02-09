@@ -1,15 +1,5 @@
 #!/bin/bash
 
-
-# echo -e "#!/bin/bash \n$archivo" > ./"$1.sh"
-
-# Comprobamos si el directorio en el que estamos es de un repositorio git
-# if [ ! -d '.git' ]; then
-# 	echo 'Esta carpeta no contiene un repositorio Git'
-# 	exit -1
-# fi
-
-
 # Ahora comprobamos si se le paso algun parametro
 if [ $# == 0 ]; then
 	echo "pushGit: ¡Error! No se le a pasado ningún parámetro"
