@@ -31,6 +31,9 @@ else
     read -p "Codigo: " archivo
     # Escribimos la linea de codigo en el archivo 
     echo -e "#!/bin/bash \n$archivo" > ./"$1"
+
+    # Agregando los permisos
+    chmod u+x ./"$1"
 	
 	# Si llegamos hasta aquí, indicamos a Git los archivos a subir
 	git add $1
